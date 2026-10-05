@@ -1,0 +1,47 @@
+/**
+ Approach: (Min Heap) Priority Queue Using built-in Class Priority Queue
+
+ Time Complexity:
+ - offer()   : O(log n)
+ - poll()    : O(log n)
+ - peek()    : O(1)
+ - size()    : O(1)
+ - isEmpty() : O(1)
+ - display() : O(n)
+
+ Space Complexity: O(n)
+ */
+
+import java.util.*;
+import java.util.PriorityQueue;
+
+public class Min_Heap_Priority_Queue {
+
+    public static void main(String[] args) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        pq.offer(40);
+        pq.offer(10);
+        pq.offer(30);
+        pq.offer(20);
+        pq.offer(50);
+        System.out.print("Priority Queue (Min Heap): ");
+        System.out.println(pq);
+
+        if (pq.isEmpty()) {
+            throw new NoSuchElementException("Priority Queue is empty!");
+        }
+        System.out.println("Top Element: " + pq.peek());
+        System.out.println("Size: " + pq.size());
+        System.out.println("Removed: " + pq.poll());
+        System.out.print("Priority Queue: ");
+        System.out.println(pq);
+
+        System.out.println("Is Empty: " + pq.isEmpty());
+        System.out.print("Sorted Order: ");
+        while (!pq.isEmpty()) {
+            System.out.print(pq.poll() + " ");
+        }
+        System.out.println();
+    }
+}

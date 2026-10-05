@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Deque/Deque.iml" filepath="$PROJECT_DIR$/Deque/Deque.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Heap/Heap.iml" filepath="$PROJECT_DIR$/Heap/Heap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Priority Queue/Priority Queue.iml" filepath="$PROJECT_DIR$/Priority Queue/Priority Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/queue.iml" filepath="$PROJECT_DIR$/queue.iml" />
+    </modules>
+  </component>
+</project>
