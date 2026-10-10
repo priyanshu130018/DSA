@@ -1,5 +1,5 @@
 /**
- Search for a target element in a rotated sorted array and return its index.
+ Search for a target element in a rotated sorted array and return its index
 
  Approach: Binary Search
  - Time Complexity: O(log n)
@@ -8,7 +8,7 @@
 
 import java.util.*;
 
-public class Search_Rotated_Array {
+public class Search_In_Rotated_Array_1 {
 
     public static int search(int[] arr, int target) {
 
@@ -23,22 +23,21 @@ public class Search_Rotated_Array {
                 return mid;
             }
 
-            // Left half is sorted
+            // If Left half is sorted
             if (arr[left] <= arr[mid]) {
-
                 if (arr[left] <= target && target < arr[mid]) {
-                    right = mid - 1;
+                    right = mid - 1;   // Target is in left half
                 } else {
-                    left = mid + 1;
+                    left = mid + 1;    // Search right half
                 }
 
-            } else {
-
-                // Right half is sorted
+            }
+            // Right half is sorted
+            else {
                 if (arr[mid] < target && target <= arr[right]) {
-                    left = mid + 1;
+                    left = mid + 1;    // Target is in right half
                 } else {
-                    right = mid - 1;
+                    right = mid - 1;   // Search left half
                 }
             }
         }

@@ -1,5 +1,5 @@
 /**
- Search for a target element in a sorted array and return its index.
+ Search for a target element in a sorted array and return its index
 
  Approach: Binary Search
  - Time Complexity: O(log n)
@@ -16,7 +16,6 @@ public class Binary_Search {
         int right = arr.length - 1;
 
         while (left <= right) {
-
             int mid = left + (right - left) / 2;
 
             if (arr[mid] == target) {

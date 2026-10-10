@@ -1,14 +1,14 @@
 /**
- Find the minimum element in a rotated sorted array.
+ Find the minimum element in a rotated sorted array
 
  Approach: Binary Search
  - Time Complexity: O(log n)
  - Space Complexity: O(1)
  **/
 
-import java.util.*;
+import java.util.Arrays;
 
-public class Min_Rotated_Array {
+public class Min_In_Rotated_Array {
 
     public static int findMin(int[] arr) {
 
@@ -21,7 +21,8 @@ public class Min_Rotated_Array {
 
             if (arr[mid] > arr[right]) {
                 left = mid + 1;
-            } else {
+            }
+            else {
                 right = mid;
             }
         }
@@ -32,11 +33,9 @@ public class Min_Rotated_Array {
     public static void main(String[] args) {
 
         int[] arr = {4, 5, 6, 7, 0, 1, 2};
-
         System.out.println("Array: " + Arrays.toString(arr));
 
         int result = findMin(arr);
-
         System.out.println("Minimum Element: " + result);
     }
 }
